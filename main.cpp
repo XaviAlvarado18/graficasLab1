@@ -22,13 +22,16 @@ Color fillColor3{255,0,0};  // Color rojo
 Color fillColor4{0,255,0};  // Color verde
 
 
+
 std::vector<Vertex2> points; // Declaración y definición de 'points' como un vector de Vertex2
 
 std::vector<Vertex2> polygonVertices;
 
 
+
 int width = 2500;
 int height = 2500;
+
 
 using namespace std;
 
@@ -226,14 +229,21 @@ void render() {
 
     std::vector<Vertex> polygonVertices;
     
+    //POLIGONO 2
+    polygonVertices.push_back({321.0f, 335.0f});
+    polygonVertices.push_back({288.0f, 286.0f});
+    polygonVertices.push_back({339.0f, 251.0f});
+    polygonVertices.push_back({374.0f, 302.0f});
+  
+  
     //POLIGONO 4
     polygonVertices.push_back({413.0f, 177.0f});
     polygonVertices.push_back({448.0f, 159.0f});
     polygonVertices.push_back({502.0f, 88.0f});
-
     polygonVertices.push_back({553.0f, 53.0f});
     polygonVertices.push_back({535.0f, 36.0f});
     polygonVertices.push_back({676.0f, 37.0f});
+
 
     polygonVertices.push_back({660.0f, 52.0f});
     polygonVertices.push_back({750.0f, 145.0f});
