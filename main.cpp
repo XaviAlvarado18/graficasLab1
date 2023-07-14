@@ -29,6 +29,7 @@ std::vector<Vertex2> polygonVertices;
 
 
 
+
 int width = 2500;
 int height = 2500;
 
@@ -229,11 +230,23 @@ void render() {
 
     std::vector<Vertex> polygonVertices;
     
+   
+  
     //POLIGONO 2
     polygonVertices.push_back({321.0f, 335.0f});
     polygonVertices.push_back({288.0f, 286.0f});
     polygonVertices.push_back({339.0f, 251.0f});
     polygonVertices.push_back({374.0f, 302.0f});
+    fillPolygon(polygonVertices, fillColor2);
+  
+  
+    //POLIGONO 3  
+    polygonVertices.push_back({377.0f, 249.0f});
+    polygonVertices.push_back({411.0f, 197.0f});
+    polygonVertices.push_back({436.0f, 249.0f});
+
+    
+    fillPolygon(polygonVertices, fillColor3);
   
   
     //POLIGONO 4
@@ -270,6 +283,7 @@ void render() {
     polygonVertices.push_back({739, 170});
 
     fillPolygon(polygonVertices, fillColor4);
+
 
     renderBuffer();
 }
