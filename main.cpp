@@ -15,7 +15,7 @@ Color clearColor(0, 0, 0); // Definir clearColor como NAVY_BLUE
 
 // Declaración de la variable global currentColor
 Color currentColor(255, 255, 255); // Puedes cambiar los valores según tu elección
-Color fillColor{255, 255, 0};  // Color rojo
+Color fillColor{0, 0, 255};  // Color azul
 
 
 std::vector<Vertex2> points; // Declaración y definición de 'points' como un vector de Vertex2
@@ -24,7 +24,7 @@ std::vector<Vertex2> polygonVertices;
 
 
 int width = 1000;
-int height = 1800;
+int height = 1600;
 
 using namespace std;
 
@@ -223,16 +223,10 @@ void render() {
     std::vector<Vertex> polygonVertices;
     
 
-    polygonVertices.push_back({165.0f, 380.0f});
-    polygonVertices.push_back({185.0f, 360.0f});
-    polygonVertices.push_back({180.0f, 330.0f});
-    polygonVertices.push_back({207.0f, 345.0f});
-    polygonVertices.push_back({233.0f, 330.0f});
-    polygonVertices.push_back({230.0f, 360.0f});
-    polygonVertices.push_back({250.0f, 380.0f});
-    polygonVertices.push_back({220.0f, 385.0f});
-    polygonVertices.push_back({205.0f, 410.0f});
-    polygonVertices.push_back({193.0f, 383.0f});
+    polygonVertices.push_back({321.0f, 335.0f});
+    polygonVertices.push_back({288.0f, 286.0f});
+    polygonVertices.push_back({339.0f, 251.0f});
+    polygonVertices.push_back({374.0f, 302.0f});
 
     
     fillPolygon(polygonVertices, fillColor);
