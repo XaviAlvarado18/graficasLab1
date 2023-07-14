@@ -15,7 +15,13 @@ Color clearColor(0, 0, 0); // Definir clearColor como NAVY_BLUE
 
 // Declaración de la variable global currentColor
 Color currentColor(255, 255, 255); // Puedes cambiar los valores según tu elección
-Color fillColor{0,255,0};  // Color verde
+
+
+Color fillColor1{255,255,0};  // Color amarillo
+Color fillColor2{0,0,255};  // Color azul
+Color fillColor3{255,0,0};  // Color rojo
+Color fillColor4{0,255,0};  // Color verde
+
 
 
 std::vector<Vertex2> points; // Declaración y definición de 'points' como un vector de Vertex2
@@ -23,8 +29,10 @@ std::vector<Vertex2> points; // Declaración y definición de 'points' como un v
 std::vector<Vertex2> polygonVertices;
 
 
-int width = 1600;
-int height = 1000;
+
+int width = 2500;
+int height = 2500;
+
 
 using namespace std;
 
@@ -222,14 +230,45 @@ void render() {
 
     std::vector<Vertex> polygonVertices;
     
+
+    //POLIGONO 1
+    polygonVertices.push_back({165.0f, 380.0f});
+    polygonVertices.push_back({185.0f, 360.0f});
+    polygonVertices.push_back({180.0f, 330.0f});
+    polygonVertices.push_back({207.0f, 345.0f});
+    polygonVertices.push_back({233.0f, 330.0f});
+    polygonVertices.push_back({230.0f, 360.0f});
+    polygonVertices.push_back({250.0f, 380.0f});
+    polygonVertices.push_back({220.0f, 385.0f});
+    polygonVertices.push_back({205.0f, 410.0f});
+    polygonVertices.push_back({193.0f, 383.0f});
+    fillPolygon(polygonVertices, fillColor1);
+  
+    //POLIGONO 2
+    polygonVertices.push_back({321.0f, 335.0f});
+    polygonVertices.push_back({288.0f, 286.0f});
+    polygonVertices.push_back({339.0f, 251.0f});
+    polygonVertices.push_back({374.0f, 302.0f});
+    fillPolygon(polygonVertices, fillColor2);
+  
+  
+    //POLIGONO 3  
+    polygonVertices.push_back({377.0f, 249.0f});
+    polygonVertices.push_back({411.0f, 197.0f});
+    polygonVertices.push_back({436.0f, 249.0f});
+
+    
+    fillPolygon(polygonVertices, fillColor3);
+  
+  
     //POLIGONO 4
     polygonVertices.push_back({413.0f, 177.0f});
     polygonVertices.push_back({448.0f, 159.0f});
     polygonVertices.push_back({502.0f, 88.0f});
-
     polygonVertices.push_back({553.0f, 53.0f});
     polygonVertices.push_back({535.0f, 36.0f});
     polygonVertices.push_back({676.0f, 37.0f});
+
 
     polygonVertices.push_back({660.0f, 52.0f});
     polygonVertices.push_back({750.0f, 145.0f});
@@ -255,7 +294,8 @@ void render() {
     polygonVertices.push_back({735, 148});
     polygonVertices.push_back({739, 170});
 
-    fillPolygon(polygonVertices, fillColor);
+    fillPolygon(polygonVertices, fillColor4);
+
 
     renderBuffer();
 }
