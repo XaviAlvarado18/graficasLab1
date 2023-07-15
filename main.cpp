@@ -30,8 +30,8 @@ std::vector<Vertex2> polygonVertices;
 
 
 
-int width = 2500;
-int height = 2500;
+int width = 1400;
+int height = 1400;
 
 
 using namespace std;
@@ -232,13 +232,6 @@ void render() {
     
    
   
-    //POLIGONO 2
-    polygonVertices.push_back({321.0f, 335.0f});
-    polygonVertices.push_back({288.0f, 286.0f});
-    polygonVertices.push_back({339.0f, 251.0f});
-    polygonVertices.push_back({374.0f, 302.0f});
-    fillPolygon(polygonVertices, fillColor2);
-  
   
     //POLIGONO 3  
     polygonVertices.push_back({377.0f, 249.0f});
@@ -249,40 +242,7 @@ void render() {
     fillPolygon(polygonVertices, fillColor3);
   
   
-    //POLIGONO 4
-    polygonVertices.push_back({413.0f, 177.0f});
-    polygonVertices.push_back({448.0f, 159.0f});
-    polygonVertices.push_back({502.0f, 88.0f});
-    polygonVertices.push_back({553.0f, 53.0f});
-    polygonVertices.push_back({535.0f, 36.0f});
-    polygonVertices.push_back({676.0f, 37.0f});
 
-
-    polygonVertices.push_back({660.0f, 52.0f});
-    polygonVertices.push_back({750.0f, 145.0f});
-    polygonVertices.push_back({761.0f, 179.0f});
-
-    polygonVertices.push_back({672.0f, 192.0f});
-    polygonVertices.push_back({659.0f, 214.0f});
-    polygonVertices.push_back({615.0f, 214.0f});
-
-    polygonVertices.push_back({632.0f, 230.0f});
-    polygonVertices.push_back({580.0f, 230.0f});
-    polygonVertices.push_back({597.0f, 215.0f});
-
-    polygonVertices.push_back({552.0f, 214.0f});
-    polygonVertices.push_back({517.0f, 144.0f});
-    polygonVertices.push_back({466.0f, 180.0f});
-
-
-    //POLIGONO 5 (AGUJERO)
-
-    polygonVertices.push_back({682, 175});
-    polygonVertices.push_back({708, 120});
-    polygonVertices.push_back({735, 148});
-    polygonVertices.push_back({739, 170});
-
-    fillPolygon(polygonVertices, fillColor4);
 
 
     renderBuffer();
