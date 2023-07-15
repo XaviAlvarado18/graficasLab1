@@ -231,34 +231,6 @@ void render() {
     std::vector<Vertex> polygonVertices;
     
 
-    //POLIGONO 1
-    polygonVertices.push_back({165.0f, 380.0f});
-    polygonVertices.push_back({185.0f, 360.0f});
-    polygonVertices.push_back({180.0f, 330.0f});
-    polygonVertices.push_back({207.0f, 345.0f});
-    polygonVertices.push_back({233.0f, 330.0f});
-    polygonVertices.push_back({230.0f, 360.0f});
-    polygonVertices.push_back({250.0f, 380.0f});
-    polygonVertices.push_back({220.0f, 385.0f});
-    polygonVertices.push_back({205.0f, 410.0f});
-    polygonVertices.push_back({193.0f, 383.0f});
-    fillPolygon(polygonVertices, fillColor1);
-  
-    //POLIGONO 2
-    polygonVertices.push_back({321.0f, 335.0f});
-    polygonVertices.push_back({288.0f, 286.0f});
-    polygonVertices.push_back({339.0f, 251.0f});
-    polygonVertices.push_back({374.0f, 302.0f});
-    fillPolygon(polygonVertices, fillColor2);
-  
-  
-    //POLIGONO 3  
-    polygonVertices.push_back({377.0f, 249.0f});
-    polygonVertices.push_back({411.0f, 197.0f});
-    polygonVertices.push_back({436.0f, 249.0f});
-
-    
-    fillPolygon(polygonVertices, fillColor3);
   
   
     //POLIGONO 4
