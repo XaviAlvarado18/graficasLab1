@@ -30,8 +30,8 @@ std::vector<Vertex2> polygonVertices;
 
 
 
-int width = 1400;
-int height = 1400;
+int width = 600;
+int height = 600;
 
 
 using namespace std;
